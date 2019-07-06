@@ -4,7 +4,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    swiperCurrent : 0,
+    indicatorDots : true,
+    autoplay  : true,
+    inteval : 3000,
+    duration  : 800,
+    circular  : true,
+    imgUrls : [
+      
+      "../image/Carousel/apple.jpg",
+      "../image/Carousel/Grape.jpg",
+      "../image/Carousel/heblin.jpg",
+      "../image/Carousel/peach.jpg",
+      "../image/Carousel/pear.jpg"
+    ]
+  },
+
+  swiperChange : function(e) {
+    this.setData({
+      swiperCurrent: e.detail.current
+    })
+    //console.log("swiperChange===" + this.data.swiperCurrent);
+  },
+
+  chuangEvent:function(e) {
+    this.setData({
+      swiperCurrent: e.currentTarget.id
+    })
+    //console.log("chuangEvent===" + this.data.swiperCurrent);
+  },
+
+  swipclick: function(e) {
+    //console.log("swipclick===" + this.data.swiperCurrent);
   },
 
   /**

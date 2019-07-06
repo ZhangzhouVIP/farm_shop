@@ -1,14 +1,4 @@
- <view class='history-table-wrap'>
-    <view class="table">
-      <view class="tr">
-          <view class="th th1">日期</view>
-          <view class="th th2">时间</view>
-          <view class="th th3">伤害</view>
-      </view>
-      <view class="tr" wx:for="{{15}}">
-          <view class="td td1">2018/02/12</view>
-          <view class="td td2">11:30</view>
-          <view class="td td3">本次对海煞造成了100000点伤害</view>
-      </view>
-    </view>
- </view>
+<view>
+  <search id="search">
+  </search>
+</view>

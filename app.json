@@ -6,42 +6,42 @@
     "pages/myinfo/myinfo"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#666666",
+    "navigationBarBackgroundColor": "#FF8C00",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "李家农铺",
     "backgroundColor": "#654321",
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "onReachBottomDistance": 25
   },
   "tabBar": {
-    "color": "#ffffff",
-    "selectedColor": "#ff0000",
-    "backgroundColor": "#666666",
+    "color": "#696969",
+    "selectedColor": "#32CD32",
+    "backgroundColor": "#FF8C00",
     "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "pages/image/home-default.png",
-        "selectedIconPath": "pages/image/home-active.png"
+        "iconPath": "pages/image/tabBarIcon/home-default.png",
+        "selectedIconPath": "pages/image/tabBarIcon/home-active.png"
       },
       {
         "pagePath": "pages/cotage/cotage",
         "text": "分类",
-        "iconPath": "pages/image/class-default.png",
-        "selectedIconPath": "pages/image/class-active.png"
+        "iconPath": "pages/image/tabBarIcon/class-default.png",
+        "selectedIconPath": "pages/image/tabBarIcon/class-active.png"
       },
       {
         "pagePath": "pages/cart/cart",
         "text": "购物车",
-        "iconPath": "pages/image/cart-default.png",
-        "selectedIconPath": "pages/image/cart-active.png"
+        "iconPath": "pages/image/tabBarIcon/cart-default.png",
+        "selectedIconPath": "pages/image/tabBarIcon/cart-active.png"
       },
       {
         "pagePath": "pages/myinfo/myinfo",
         "text": "我的",
-        "iconPath": "pages/image/my-default.png",
-        "selectedIconPath": "pages/image/my-active.png"
+        "iconPath": "pages/image/tabBarIcon/my-default.png",
+        "selectedIconPath": "pages/image/tabBarIcon/my-active.png"
       }
     ],
     "position": "bottom"
