@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/cotage/cotage",
     "pages/cart/cart",
-    "pages/myInfo/myinfo"
+    "pages/myinfo/myinfo"
   ],
   "window": {
     "navigationBarBackgroundColor": "#666666",
@@ -38,7 +38,7 @@
         "selectedIconPath": "pages/image/cart-active.png"
       },
       {
-        "pagePath": "pages/myInfo/myinfo",
+        "pagePath": "pages/myinfo/myinfo",
         "text": "我的",
         "iconPath": "pages/image/my-default.png",
         "selectedIconPath": "pages/image/my-active.png"
