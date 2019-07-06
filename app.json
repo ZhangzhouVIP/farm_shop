@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cotage/cotage",
+    "pages/cart/cart",
+    "pages/myInfo/myinfo"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#666666",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "李家农铺",
+    "backgroundColor": "#654321",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 25
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#ff0000",
+    "backgroundColor": "#666666",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/image/home-default.png",
+        "selectedIconPath": "pages/image/home-active.png"
+      },
+      {
+        "pagePath": "pages/cotage/cotage",
+        "text": "分类",
+        "iconPath": "pages/image/class-default.png",
+        "selectedIconPath": "pages/image/class-active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "pages/image/cart-default.png",
+        "selectedIconPath": "pages/image/cart-active.png"
+      },
+      {
+        "pagePath": "pages/myInfo/myinfo",
+        "text": "我的",
+        "iconPath": "pages/image/my-default.png",
+        "selectedIconPath": "pages/image/my-active.png"
+      }
+    ],
+    "position": "bottom"
+  }
+}
