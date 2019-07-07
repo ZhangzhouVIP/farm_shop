@@ -18,10 +18,22 @@ Page({
       "../image/Carousel/pear.jpg"
     ],
     sortImg : [
-      {"url":"../image/homeSortImg/1.png","title":"水果"},
-      {"url":"../image/homeSortImg/2.png","title":"干果"},
-      {"url":"../image/homeSortImg/3.png","title":"水产"},
-      {"url":"../image/homeSortImg/4.png","title":"饮品"}
+      {"id":"0", "url":"../image/homeSortImg/1.png", "title":"水果", "color":"#707070"},
+      {"id":"1", "url":"../image/homeSortImg/2.png", "title":"干果", "color":"#707070"},
+      {"id":"2", "url":"../image/homeSortImg/3.png", "title":"水产", "color":"#707070"},
+      {"id":"3", "url":"../image/homeSortImg/4.png", "title":"饮品", "color":"#707070"}
+    ],
+    sortImgOrg  : [
+      {"url":"../image/homeSortImg/1.png", "color":"#707070"},
+      {"url":"../image/homeSortImg/2.png", "color":"#707070"},
+      {"url":"../image/homeSortImg/3.png", "color":"#707070"},
+      {"url":"../image/homeSortImg/4.png", "color":"#707070"}
+    ],
+    sortImgChg  : [
+      {"url":"../image/homeSortImg/11.png", "color":"#FF0000"},
+      {"url":"../image/homeSortImg/22.png", "color":"#FF0000"},
+      {"url":"../image/homeSortImg/33.png", "color":"#FF0000"},
+      {"url":"../image/homeSortImg/44.png", "color":"#FF0000"}
     ]
   },
 
@@ -41,6 +53,47 @@ Page({
 
   swipclick: function(e) {
     //console.log("swipclick===" + this.data.swiperCurrent);
+  },
+  
+  catchTap: function(e) {
+    // 恢复其他
+    for(var item in this.data.sortImg){
+
+      let v_temOrgUrl  = "sortImg[" + item + "].url";
+      let temOrgUrl    = this.data.sortImgOrg[item].url;
+      let v_temOrgCol  = "sortImg[" + item + "].color";
+      let temOrgCol    = this.data.sortImgOrg[item].color;
+      
+      this.setData({
+        [v_temOrgUrl] : temOrgUrl,
+        [v_temOrgCol] : temOrgCol
+      })
+    }
+    // 
+    
+    let itemid    = e.currentTarget.id;
+
+    let v_orgUrl  = "sortImg[" + itemid + "].url";
+    let orgUrl    = this.data.sortImgOrg[itemid].url;
+    let chgUrl    = this.data.sortImgChg[itemid].url;
+
+    
+    let v_orgCol  = "sortImg[" + itemid + "].color";
+    let orgCol    = this.data.sortImgOrg[itemid].color;
+    let chgCol    = this.data.sortImgChg[itemid].color;
+
+
+    if(this.data.sortImg[itemid].url == orgUrl && this.data.sortImg[itemid].color == orgCol) {
+      this.setData({
+        [v_orgUrl] : chgUrl,
+        [v_orgCol] : chgCol
+      })
+    }else{
+      this.setData({
+        [v_orgUrl] : orgUrl,
+        [v_orgCol] : orgCol
+      })
+    }
   },
 
   /**
@@ -98,4 +151,6 @@ Page({
   onShareAppMessage: function () {
     
   }
+
+
 })

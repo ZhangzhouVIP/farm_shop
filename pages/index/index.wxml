@@ -13,9 +13,9 @@
 </view>
 <view class="space"></view>
 <view class="content">
-  <view class="home-sort" wx:for="{{sortImg}}" wx:key="url" wx:for-item="item">
-    <image class="home-sort-img" src="{{item.url}}" mode="scaleToFill"></image>
-    <view class="content-item-title">
+  <view class="home-sort" wx:for="{{sortImg}}" wx:key="url" wx:for-item="item" >
+    <image catchtap="catchTap" id="{{item.id}}" class="home-sort-img" src="{{item.url}}" mode="scaleToFill"></image>
+    <view class="content-item-title" style="color:{{item.color}}">
       <text>{{item.title}}</text>
     </view>
   </view>

@@ -41,7 +41,7 @@ swiper-item image{
 }
 .content-item-title {
     position: absolute;
-    color: #707070;
+    /* color: #707070; */
     bottom: 25%;
     text-align: center;
     font-size: 16px;
