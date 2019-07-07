@@ -1,6 +1,6 @@
 .weui-search-bar{
     position    :   relative;
-    margin: 0%;
+    margin      :   0%;
     padding     :   10px 10px;
     display     :   -webkit-box;
     display     :   -webkit-flex;

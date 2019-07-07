@@ -3,12 +3,20 @@
   </search>
 </view>
 <view class="swiper-container">
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{inteval}}" duration="{{duration}}"
-  circular="{{circular}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{inteval}}" duration="{{duration}}" circular="{{circular}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
   <block wx:for="{{imgUrls}}" wx:key="unique">
     <swiper-item >
       <image src="{{item}}" class="img" bindtap="swipclick"/>
     </swiper-item>
   </block>
   </swiper>
+</view>
+<view class="space"></view>
+<view class="content">
+  <view class="home-sort" wx:for="{{sortImg}}" wx:key="url" wx:for-item="item">
+    <image class="home-sort-img" src="{{item.url}}" mode="scaleToFill"></image>
+    <view class="content-item-title">
+      <text>{{item.title}}</text>
+    </view>
+  </view>
 </view>

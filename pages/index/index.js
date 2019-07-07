@@ -11,12 +11,17 @@ Page({
     duration  : 800,
     circular  : true,
     imgUrls : [
-      
       "../image/Carousel/apple.jpg",
       "../image/Carousel/Grape.jpg",
       "../image/Carousel/heblin.jpg",
       "../image/Carousel/peach.jpg",
       "../image/Carousel/pear.jpg"
+    ],
+    sortImg : [
+      {"url":"../image/homeSortImg/1.png","title":"水果"},
+      {"url":"../image/homeSortImg/2.png","title":"干果"},
+      {"url":"../image/homeSortImg/3.png","title":"水产"},
+      {"url":"../image/homeSortImg/4.png","title":"饮品"}
     ]
   },
 
